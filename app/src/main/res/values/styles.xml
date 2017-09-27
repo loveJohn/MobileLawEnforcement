@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="fade_animation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="centerSacleAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_in_center</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_center</item>
+    </style>
+
+    <style name="slide_top_animation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+
+    <style name="slide_bottom_animation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="slide_left_animation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="slide_right_animation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="slide_topbot_animation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="rightlayerAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/rightlayer_show</item>
+        <item name="android:windowExitAnimation">@anim/rightlayer_hide</item>
+    </style>
+
+    <style name="textappearance_switch">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">#ff14b9d6</item>
+        <item name="android:textColorLink">#ff14b9d6</item>
+        <item name="android:textColorHighlight">#ff14b9d6</item>
+    </style>
+    <!-- SpotsDialogDefault theme. -->
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">正在加载...</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+    <style name="SpotsDialogDefault_1" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">正在从服务器获取详情，请稍候...</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+</resources>

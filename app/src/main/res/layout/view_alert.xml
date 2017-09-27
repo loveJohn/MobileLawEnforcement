@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rec_corners_4_default"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing" >
+
+        <TextView
+            android:id="@+id/view_alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:background="#2db1e2" >
+        </View>
+
+        <TextView
+            android:id="@+id/view_alert_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/view_alert_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_blue"
+                android:paddingLeft="@dimen/spacing2x"
+                android:paddingRight="@dimen/spacing2x"
+                android:text="取消操作"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fontsize_normal" >
+            </Button>
+
+            <Button
+                android:id="@+id/view_alert_do"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/spacing2x"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_blue"
+                android:paddingLeft="@dimen/spacing2x"
+                android:paddingRight="@dimen/spacing2x"
+                android:text="执行操作"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fontsize_normal" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

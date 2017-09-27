@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_task_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing"
+        android:paddingBottom="@dimen/spacing"
+        android:paddingLeft="@dimen/spacing"
+        android:paddingRight="@dimen/spacing"
+        android:paddingTop="@dimen/spacing2x" >
+
+        <TextView
+            android:id="@+id/view_mineral_edite_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingTop="@dimen/spacing"
+            android:text="第一次核查"
+            android:textColor="#2db1e2"
+            android:textSize="@dimen/fontsize_medium"
+            android:visibility="gone" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:shrinkColumns="1"
+            android:stretchColumns="1" >
+
+            <TableRow android:paddingTop="@dimen/spacing2h" android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="核查时间："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/fragment_mineral_hc_edit_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:cursorVisible="true"
+                    android:drawableRight="@mipmap/ic_next"
+                    android:focusableInTouchMode="true"
+                    android:padding="@dimen/spacing"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/blue"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="是否非法采矿点："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" />
+
+                <RadioGroup
+                    android:id="@+id/fragment_mineral_hc_edite_radio_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:gravity="left"
+                    android:padding="@dimen/spacing" >
+
+                    <RadioButton
+                        android:id="@+id/fragment_mineral_hc_edite_radio_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_selected"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/spacing4x"
+                        android:text="否"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_mineral_hc_edite_radio_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing2h"
+                        android:button="@drawable/ic_selected"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/spacing4x"
+                        android:text="是"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="违法主体名称："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/fragment_mineral_hc_edit_wfztn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:padding="@dimen/spacing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" />
+                <!-- <TextView -->
+                <!-- android:id="@+id/fragment_mineral_hc_edit_wfzt" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:background="@drawable/bg_autotextview" -->
+                <!-- android:cursorVisible="true" -->
+                <!-- android:drawableRight="@drawable/ic_next" -->
+                <!-- android:focusableInTouchMode="true" -->
+                <!-- android:padding="@dimen/spacing" -->
+                <!-- android:singleLine="false" -->
+                <!-- android:textColor="@color/black" -->
+                <!-- android:textCursorDrawable="@color/blue" -->
+                <!-- android:textSize="@dimen/fontsize_normal"> -->
+
+
+                <!-- </TextView> -->
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="违法主体性质："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+
+                <com.chinadci.mel.android.ui.views.DropDownSpinner
+                    android:id="@+id/fragment_hc_edite_illegalstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:drawableRight="@mipmap/ic_dropdown"
+                    android:padding="@dimen/spacing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </com.chinadci.mel.android.ui.views.DropDownSpinner>
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="非法开采方式："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+
+                <com.chinadci.mel.android.ui.views.DropDownSpinner
+                    android:id="@+id/fragment_hc_edite_mineralType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:drawableRight="@mipmap/ic_dropdown"
+                    android:padding="@dimen/spacing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </com.chinadci.mel.android.ui.views.DropDownSpinner>
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="非法开采矿种："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+
+                <com.chinadci.mel.android.ui.views.DropDownSpinner
+                    android:id="@+id/fragment_hc_edite_acType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:drawableRight="@mipmap/ic_dropdown"
+                    android:padding="@dimen/spacing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </com.chinadci.mel.android.ui.views.DropDownSpinner>
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="是否停止非法开采："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" />
+
+                <RadioGroup
+                    android:id="@+id/fragment_mineral_hcStop_edite_radio_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:gravity="left"
+                    android:padding="@dimen/spacing" >
+
+                    <RadioButton
+                        android:id="@+id/fragment_mineral_hcStop_edite_radio_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_selected"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/spacing4x"
+                        android:text="否"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_mineral_hcStop_edite_radio_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing2h"
+                        android:button="@drawable/ic_selected"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/spacing4x"
+                        android:text="是"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="是否立即取缔："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" />
+
+                <RadioGroup
+                    android:id="@+id/fragment_mineral_ljqdStop_edite_radio_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:gravity="left"
+                    android:padding="@dimen/spacing" >
+
+                    <RadioButton
+                        android:id="@+id/fragment_mineral_ljqdStop_edite_radio_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_selected"
+                        android:paddingLeft="@dimen/spacing4x"
+                        android:text="否"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_mineral_ljqdStop_edite_radio_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing2h"
+                        android:button="@drawable/ic_selected"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/spacing4x"
+                        android:text="是"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+            </TableRow>
+            
+            <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="备注："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fontsize_normal" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/fragment_mineral_log_edite_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_autotextview"
+                    android:cursorVisible="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|top"
+                    android:minLines="3"
+                    android:padding="@dimen/spacing"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/blue"
+                    android:textSize="@dimen/fontsize_normal" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/view_patrol_edite_redline" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/bg_redline" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingLeft="@dimen/spacing" -->
+            <!-- android:text="绘制红线图" -->
+            <!-- android:textColor="@color/white" -->
+            <!-- android:textSize="@dimen/fontsize_medium" > -->
+            <!-- </TextView> -->
+
+            <ImageButton
+                android:id="@+id/view_mineral_hc_edite_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/spacing"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_camera2" >
+            </ImageButton>
+
+<!--             <ImageButton -->
+<!--                 android:id="@+id/view_mineral_hc_edite_audio" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_gravity="left" -->
+<!--                 android:layout_marginLeft="@dimen/spacing" -->
+<!--                 android:background="@color/transparent" -->
+<!--                 android:src="@drawable/ic_tape2" > -->
+<!--             </ImageButton> -->
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_media" />
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/view_patrol_edite_photolayout" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="@dimen/spacing" -->
+        <!-- android:orientation="vertical" -->
+        <!-- android:padding="@dimen/spacing" -->
+        <!-- android:visibility="gone" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/spacing" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="@string/cn_photo" -->
+        <!-- android:textColor="@color/black" -->
+        <!-- android:textSize="@dimen/fontsize_normal" /> -->
+
+
+        <!-- <View -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="1px" -->
+        <!-- android:background="#d0d0d0" > -->
+        <!-- </View> -->
+
+
+        <!-- <com.chinadci.android.ui.views.NoScrollGridView -->
+        <!-- android:id="@+id/view_patrol_edite_photogrid" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="@dimen/spacing" -->
+        <!-- android:gravity="center" -->
+        <!-- android:horizontalSpacing="@dimen/spacing" -->
+        <!-- android:numColumns="2" -->
+        <!-- android:stretchMode="columnWidth" -->
+        <!-- android:verticalSpacing="@dimen/spacing" > -->
+        <!-- </com.chinadci.android.ui.views.NoScrollGridView> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- 录音列表 -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/view_patrol_edite_audiolayout" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="@dimen/spacing" -->
+        <!-- android:orientation="vertical" -->
+        <!-- android:padding="@dimen/spacing" -->
+        <!-- android:visibility="gone" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="@dimen/spacing" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="@string/cn_tape" -->
+        <!-- android:textColor="@color/black" -->
+        <!-- android:textSize="@dimen/fontsize_normal" /> -->
+
+
+        <!-- <View -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="1px" -->
+        <!-- android:background="#d0d0d0" > -->
+        <!-- </View> -->
+
+
+        <!-- <com.chinadci.android.ui.views.NoScrollGridView -->
+        <!-- android:id="@+id/view_patrol_edite_audiogrid" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginTop="@dimen/spacing" -->
+        <!-- android:gravity="center" -->
+        <!-- android:numColumns="1" -->
+        <!-- android:stretchMode="columnWidth" -->
+        <!-- android:verticalSpacing="@dimen/spacing" > -->
+        <!-- </com.chinadci.android.ui.views.NoScrollGridView> -->
+        <!-- </LinearLayout> -->
+
+        <LinearLayout
+            android:id="@+id/view_mineral_hc_edite_historylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

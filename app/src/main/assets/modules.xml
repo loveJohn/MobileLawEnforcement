@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chinadci-manifest
+    package="com.chinadci.mel"
+    version="1.0" >
+
+    <!-- 功能点 -->
+
+    <functions>
+
+        <item
+            id="101"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_sb"
+            label="@string/mitem_case"
+            module="2101"
+            notes="疑似违法信息上报">
+        </item>
+
+        <item
+            id="102"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_hc"
+            label="@string/mitem_inspect2"
+            module="2102"
+            notes="快速处置">
+        </item>
+
+        <item
+            id="103"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_cc"
+            label="@string/mitem_supervise"
+            module="2103"
+            notes="监督检查">
+        </item>
+
+        <item
+            id="104"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_wc"
+            label="@string/mitem_track"
+            module="2104"
+            notes="土地巡查已办工作">
+        </item>
+
+        <item
+            id="402"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_hc"
+            label="@string/mitem_inspect3"
+            module="210232"
+            notes="卫片核查">
+        </item>
+
+        <item
+            id="404"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_wc"
+            label="@string/mitem_track"
+            module="21042"
+            notes="卫片核查已办工作">
+        </item>
+
+        <item
+            id="105"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_jsc"
+            label="@string/mitem_mapanalyze"
+            module="2105"
+            notes="即时查">
+        </item>
+
+        <item
+            id="106"
+            command="com.chinadci.mel.mleo.comands.LandStatisticsCommand"
+            hasModule="false"
+            icon="@drawable/ic_tj"
+            label="@string/mitem_statistics"
+            notes="统计分析">
+        </item>
+
+        <item
+            id="201"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_rz"
+            label="@string/mitem_mineral_log"
+            module="2201"
+            notes="上报巡查日志">
+        </item>
+
+        <item
+            id="202"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_hc"
+            label="@string/mitem_mineral_hc"
+            module="2202"
+            notes="案件核查">
+        </item>
+
+        <item
+            id="203"
+            command="com.chinadci.mel.mleo.comands.MineralStatisticsCommand"
+            hasModule="false"
+            icon="@drawable/ic_tj"
+            label="@string/mitem_statistics"
+            notes="统计分析">
+        </item>
+
+        <item
+            id="204"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_wc"
+            label="@string/mitem_track"
+            module="2204"
+            notes="矿产执法已办工作">
+        </item>
+
+        <item
+            id="301"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_qd"
+            label="@string/mitem_patolsign"
+            module="2301"
+            notes="巡查签到">
+        </item>
+
+        <item
+            id="302"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_dt"
+            label="@string/mitem_mapview"
+            module="2302"
+            notes="地图浏览">
+        </item>
+
+        <item
+            id="303"
+            command="com.chinadci.mel.mleo.comands.LawCommand"
+            hasModule="false"
+            icon="@drawable/ic_fl"
+            label="@string/mitem_law"
+            notes="法律法规">
+        </item>
+
+        <item
+            id="304"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_yj"
+            label="@string/mitem_faceback"
+            module="2304"
+            notes="意见反馈">
+        </item>
+
+        <item
+            id="305"
+            command="com.chinadci.mel.mleo.comands.OpenModuleCommand"
+            hasModule="true"
+            icon="@drawable/ic_gy"
+            label="@string/mitem_about"
+            module="2305"
+            notes="关于">
+        </item>
+
+        <item
+            id="306"
+            command="com.chinadci.mel.mleo.comands.MapUpCommand"
+            hasModule="false"
+            icon="@drawable/ic_mapup"
+            label="@string/mitem_mapup"
+            notes="地图更新">
+        </item>
+    </functions>
+
+    <!-- homeactivity功能模块 -->
+
+    <modules>
+
+        <item
+            id="2301"
+            content="com.chinadci.mel.mleo.ui.fragments.SignInFragment"
+            notes="签到上传"
+            title="@string/mitem_patolsign"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolNewSign">
+        </item>
+
+        <item
+            id="2401"
+            content="com.chinadci.mel.mleo.ui.fragments.UserFragment"
+            notes="用户信息"
+            title="@string/title_user_info"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+
+        <item
+            id="2305"
+            content="com.chinadci.mel.mleo.ui.fragments.AboutFragment"
+            notes="关于"
+            title="@string/mitem_about"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+
+        <item
+            id="2304"
+            content="com.chinadci.mel.mleo.ui.fragments.FeedbackFragment"
+            notes="意见反馈"
+            title="@string/mitem_faceback"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+
+        <item
+            id="2302"
+            content="com.chinadci.mel.mleo.ui.fragments.MapFragment"
+            notes="地图浏览"
+            title="@string/mitem_mapview"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+
+        <item
+            id="2202"
+            content="com.chinadci.mel.mleo.ui.fragments.MineralHcListFragment"
+            notes="案件核查"
+            title="@string/mitem_mineral_hc"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+        <item
+            id="2204"
+            content="com.chinadci.mel.mleo.ui.fragments.MineralTrackListFragment"
+            notes="矿产执法已办工作"
+            title="@string/mitem_track"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolMineralTrackIdSearch">
+        </item>
+
+        <item
+            id="2201"
+            content="com.chinadci.mel.mleo.ui.fragments.MineralLogListFragment"
+            notes="上报巡查日志"
+            title="@string/mitem_mineral_log"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolMineralNewLog">
+        </item>
+
+        <item
+            id="2101"
+            content="com.chinadci.mel.mleo.ui.fragments.LandCaseListFragment"
+            notes="疑似违法信息上报"
+            title="@string/mitem_case"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandNewCase">
+        </item>
+        <!-- 正式版  -->
+        <item
+            id="2102"
+            content="com.chinadci.mel.mleo.ui.fragments.LandInspectionListFragment"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+        <!-- data版  -->
+        <!-- <item
+            id="2102"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.LandInspectionListFragment2"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.ToolSearch">
+        </item> -->
+        <item
+            id="21021"
+            content="com.chinadci.mel.mleo.ui.fragments.LandInspectionListFragment"
+            notes="案件查询"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+        <item
+            id="210212"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.LandSearchListFragment"
+            notes="案件查询"
+            title="案件查询"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+        <item
+            id="21023"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.LandInspectionListFragment3"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.ToolSearch">
+        </item>
+        <item
+            id="210232"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.LandInspectionListFragment3_wpzf"
+            notes="卫片核查"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.ToolSearch_wpzf">
+        </item>
+        <item
+            id="21024"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.LandInspectionListFragment4"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.ToolSearch">
+        </item>
+        <item
+            id="210242"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.LandInspectionListFragment4_wpzf"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.landInspectionListFragment2.ToolSearch_wpzf">
+        </item>
+        <item
+            id="21025"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionEditeFragment2.LandInspectionEditeFragment2"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandPatrol">
+        </item>
+        <item
+            id="21026"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionEditeFragment2.LandInspectionEditeFragment3"
+            notes="快速处置"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandPatrol">
+        </item>
+        <item
+            id="21027"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionEditeFragment2.LandInspectionEditeFragment3_wpzf1"
+            notes="可编辑状态"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandPatrol">
+        </item>
+        <item
+            id="21028"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionEditeFragment2.LandInspectionEditeFragment3_wpzf2"
+            notes="处理审批状态"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandPatrolApprover">
+        </item>
+        <item
+            id="21029"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionEditeFragment2.LandInspectionEditeFragment3_wpzf3"
+            notes="只查看状态"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+        <!-- add teng.guo 20170717 -->
+        <item
+            id="21030"
+            content="com.chinadci.mel.mleo.ui.fragments.landInspectionEditeFragment2.LandInspectionEditeFragment3_wpzf3"
+            notes="只查看状态"
+            title="@string/mitem_inspect2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandReback">
+        </item>
+
+        <item
+            id="2103"
+            content="com.chinadci.mel.mleo.ui.fragments.LandOverseerListFragment"
+            notes="监督检查"
+            title="@string/mitem_supervise"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+
+        <item
+            id="2104"
+            content="com.chinadci.mel.mleo.ui.fragments.LandCaseTrackListFragment"
+            notes="已办工作"
+            title="@string/mitem_track"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolLandTrackIdSearch">
+        </item>
+
+        <item
+            id="21042"
+            content="com.chinadci.mel.mleo.ui.fragments.landCaseTrackListFragment2.LandCaseTrackListFragment2"
+            notes="卫片已办工作"
+            title="@string/mitem_track"
+            tool="com.chinadci.mel.mleo.ui.fragments.landCaseTrackListFragment2.ToolLandTrackIdSearch2">
+        </item>
+
+        <!-- <item
+            id="210421"
+            content="com.chinadci.mel.mleo.ui.fragments.landCaseTrackListFragment2.LandCaseTrackFragment2"
+            notes="卫片已办工作详情页面"
+            title="@string/mitem_track2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item> -->
+
+        <item
+            id="210421"
+            content="com.chinadci.mel.mleo.ui.fragments.landCaseTrackListFragment2.LandInspectionEditeFragment31"
+            notes="卫片已办工作详情页面"
+            title="@string/mitem_track2"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolFragment">
+        </item>
+
+        <item
+            id="2105"
+            content="com.chinadci.mel.mleo.ui.fragments.MapAnalyzeFragment"
+            notes="即时查"
+            title="@string/mitem_mapanalyze"
+            tool="com.chinadci.mel.mleo.ui.fragments.ToolMapAnalyze">
+        </item>
+    </modules>
+
+</chinadci-manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rahman"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:text="巡查结果"
+        android:textColor="#464656"
+        android:textSize="@dimen/fontsize_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing2h"
+        android:background="#11eeee" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing" >
+
+        <Button
+            android:id="@+id/popup_patrol_nocase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/thumb_measure"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingLeft="@dimen/spacing3x"
+            android:paddingRight="@dimen/spacing3x"
+            android:paddingTop="@dimen/spacing"
+            android:text="结束巡查"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_small" />
+
+        <Button
+            android:id="@+id/popup_patrol_hascase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:background="@drawable/thumb_measure"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingLeft="@dimen/spacing3x"
+            android:paddingRight="@dimen/spacing3x"
+            android:paddingTop="@dimen/spacing"
+            android:text="上报案件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_small" />
+    </LinearLayout>
+
+</LinearLayout>

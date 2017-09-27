@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment-意见反馈 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/spacing"
+    android:paddingLeft="@dimen/spacing"
+    android:paddingRight="@dimen/spacing"
+    android:paddingTop="@dimen/spacing2x" >
+
+    <TextView
+        android:id="@+id/fragment_feedback_txtcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_medium" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/fragment_feedback_contactinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fragment_feedback_txtcontact"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/shape_bg_corners_rectangle4"
+        android:ems="50"
+        android:gravity="center_vertical|left"
+        android:hint="您的手机号或邮箱,必要时我们会联系您"
+        android:padding="@dimen/spacing"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_normal" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/fragment_feedback_txtdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_feedback_contactinfo"
+        android:layout_marginTop="@dimen/spacing2x"
+        android:text="意见详情"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_medium" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/fragment_feedback_detailsinfo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/fragment_feedback_txtdetails"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/shape_bg_corners_rectangle4"
+        android:gravity="left|top"
+        android:hint="请告诉我们您具体遇到的问题或想反馈的意见"
+        android:minHeight="120dp"
+        android:padding="@dimen/spacing"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_normal" >
+    </EditText>
+
+    <Button
+        android:id="@+id/fragment_feedback_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_feedback_detailsinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing2x"
+        android:background="@drawable/bg_bluebutton"
+        android:padding="@dimen/spacing"
+        android:text="发 送"
+        android:textColor="#fff"
+        android:textSize="@dimen/fontsize_medium" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/fragment_feedback_waitlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_feedback_send"
+        android:layout_marginTop="@dimen/spacing"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="@dimen/spacing3x"
+            android:layout_height="@dimen/spacing3x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:text="正在发送..."
+            android:textColor="#000"
+            android:textSize="@dimen/fontsize_normal" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_task_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing" >
+
+    <RadioGroup
+        android:id="@+id/fragment_mineraltrack_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blz_g"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/fragment_mineraltrack_blz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_blz_l"
+            android:button="@color/transparent"
+            android:checked="true"
+            android:paddingBottom="@dimen/spacing2h"
+            android:paddingLeft="@dimen/spacing2x"
+            android:paddingRight="@dimen/spacing2x"
+            android:paddingTop="@dimen/spacing2h"
+            android:text="@string/v_f40"
+            android:textColor="@drawable/fontcolor_blz"
+            android:textSize="@dimen/fontsize_normal" />
+
+        <RadioButton
+            android:id="@+id/fragment_mineraltrack_ybj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_blz_r"
+            android:button="@color/transparent"
+            android:paddingBottom="@dimen/spacing2h"
+            android:paddingLeft="@dimen/spacing2x"
+            android:paddingRight="@dimen/spacing2x"
+            android:paddingTop="@dimen/spacing2h"
+            android:text="@string/v_f41"
+            android:textColor="@drawable/fontcolor_blz"
+            android:textSize="@dimen/fontsize_normal" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/fragment_mineraltrack_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:gravity="left|center_vertical"
+        android:switchTextAppearance="@style/textappearance_switch"
+        android:textOff="@string/not_over_case"
+        android:textOn="@string/over_case"
+        android:thumb="@drawable/thumb_measure"
+        android:track="@drawable/track_measure"
+        android:visibility="gone" />
+
+    <ViewSwitcher
+        android:id="@+id/fragment_mineraltrack_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/slide_in_bottom"
+        android:outAnimation="@anim/slide_out_bottom" >
+
+        <com.chinadci.mel.android.views.pullvessel.ListViewRefreshVessel
+            android:id="@+id/fragment_mineraltrack_vessel_unfinish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing" >
+
+            <ListView
+                android:id="@+id/fragment_mineraltrack_listview_unfinish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/spacing"
+                android:listSelector="@color/transparent" >
+            </ListView>
+        </com.chinadci.mel.android.views.pullvessel.ListViewRefreshVessel>
+
+        <com.chinadci.mel.android.views.pullvessel.ListViewRefreshVessel
+            android:id="@+id/fragment_mineraltrack_vessel_finish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing" >
+
+            <ListView
+                android:id="@+id/fragment_mineraltrack_listview_finish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/spacing"
+                android:listSelector="@color/transparent" >
+            </ListView>
+        </com.chinadci.mel.android.views.pullvessel.ListViewRefreshVessel>
+    </ViewSwitcher>
+
+    <TextView
+        android:id="@+id/fragment_mineraltrack_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="@dimen/spacing"
+        android:drawableTop="@mipmap/ic_sad"
+        android:gravity="center"
+        android:text="@string/cn_nodata"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/fontsize_medium"
+        android:visibility="gone" />
+
+</LinearLayout>

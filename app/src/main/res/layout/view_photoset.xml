@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/view_photoset_animview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tblack"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing4x"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <Button
+            android:id="@+id/view_photoset_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@drawable/selector_button_w2"
+            android:text="相机拍照"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_normal" >
+        </Button>
+
+        <Button
+            android:id="@+id/view_photoset_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@drawable/selector_button_w2"
+            android:text="本地照片"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_normal" >
+        </Button>
+
+        <Button
+            android:id="@+id/view_photoset_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:background="@drawable/selector_button_b2"
+            android:text="取消"
+            android:textSize="@dimen/fontsize_normal" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

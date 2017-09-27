@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="案件编号"
+                android:textColor="#878787"
+                android:textSize="@dimen/fontsize_micro"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/view_inspection_edite_caseid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:textColor="#545454"
+                android:textSize="@dimen/fontsize_normal"
+                android:visibility="gone" >
+            </TextView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing2h"
+                android:shrinkColumns="1"
+                android:stretchColumns="1" >
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <com.chinadci.mel.android.ui.views.DropDownSpinner
+                        android:id="@+id/view_inspection_edite_illegalsubj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_dropdown"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </com.chinadci.mel.android.ui.views.DropDownSpinner>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/view_inspection_edite_parties"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" />
+                </TableRow>
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/view_inspection_edite_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:inputType="textPhonetic"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" />
+                </TableRow>
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f8"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <com.chinadci.mel.android.ui.views.DropDownSpinner
+                        android:id="@+id/view_inspection_edite_illegaltype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_dropdown"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </com.chinadci.mel.android.ui.views.DropDownSpinner>
+                </TableRow>
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f9"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <com.chinadci.mel.android.ui.views.DropDownSpinner
+                        android:id="@+id/view_inspection_edite_illegalstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_dropdown"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </com.chinadci.mel.android.ui.views.DropDownSpinner>
+                </TableRow>
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/view_inspection_edite_illegalarea"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"
+                            android:inputType="numberDecimal"
+                            android:padding="@dimen/spacing"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fontsize_normal" />
+
+                        <TextView
+                            android:id="@+id/view_inspection_edite_unit"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_button_unit"
+                            android:clickable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:text="@string/sqm"
+                            android:textColor="#81b0c7"
+                            android:textSize="@dimen/fontsize_small" >
+                        </TextView>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f13"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <com.chinadci.mel.android.ui.views.DropDownSpinner
+                        android:id="@+id/view_inspection_edite_landusage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_dropdown"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </com.chinadci.mel.android.ui.views.DropDownSpinner>
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="@dimen/spacing2h"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/i_f14"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <com.chinadci.mel.android.ui.views.DropDownSpinner
+                        android:id="@+id/view_inspection_edite_inspectres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_dropdown"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </com.chinadci.mel.android.ui.views.DropDownSpinner>
+                </TableRow>
+
+                <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="备注："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/view_inspection_edite_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_autotextview"
+                        android:gravity="left|top"
+                        android:padding="@dimen/spacing"
+                        android:paddingLeft="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

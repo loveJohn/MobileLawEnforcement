@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing" >
+
+        <com.chinadci.android.ui.views.NoScrollListView
+            android:id="@+id/view_case_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:choiceMode="none"
+            android:divider="#ebebeb"
+            android:dividerHeight="1px"
+            android:listSelector="@color/transparent" >
+        </com.chinadci.android.ui.views.NoScrollListView>
+
+        <LinearLayout
+            android:id="@+id/view_case_redline_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ebebeb" />
+
+            <TextView
+                android:id="@+id/view_case_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_next"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="案件位置"
+                android:textColor="#545454"
+                android:textSize="@dimen/fontsize_normal"
+                android:visibility="gone" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/view_case_redline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_redline_list_item"
+                android:drawableRight="@mipmap/ic_next"
+                android:paddingBottom="@dimen/spacing"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing"
+                android:paddingTop="@dimen/spacing"
+                android:text="案件红线"
+                android:textColor="#545454"
+                android:textSize="@dimen/fontsize_normal" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ebebeb" />
+        </LinearLayout>
+        <!-- 照片列表 -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_media" />
+    </LinearLayout>
+
+</ScrollView>

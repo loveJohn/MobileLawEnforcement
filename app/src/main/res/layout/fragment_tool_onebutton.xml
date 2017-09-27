@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/fragment_tool_onebutton_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_stool"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing2x"
+        android:paddingRight="@dimen/spacing2x"
+        android:textColor="@drawable/fontcolor_tool"
+        android:textSize="@dimen/fontsize_normal" />
+
+</LinearLayout>

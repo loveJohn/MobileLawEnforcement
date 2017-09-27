@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 平铺背景 -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/bg_dotted_divider_h"
+    android:tileMode="repeat" />

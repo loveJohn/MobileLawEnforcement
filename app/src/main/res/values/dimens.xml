@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 字体大小 -->
+
+
+    <!-- 特大号字体 -->
+    <dimen name="fontsize_xlarge">26sp</dimen>
+    <!-- 大号字体 -->
+    <dimen name="fontsize_large">22sp</dimen>
+    <!-- 中号字体 -->
+    <dimen name="fontsize_medium">18sp</dimen>
+    <!-- 普通字体大小　 -->
+    <dimen name="fontsize_normal">16sp</dimen>
+    <!-- 小号字体 -->
+    <dimen name="fontsize_small">14sp</dimen>
+    <!-- 微小字体 -->
+    <dimen name="fontsize_micro">12sp</dimen>
+    <dimen name="fontsize_4">4sp</dimen>
+    <dimen name="fontsize_6">6sp</dimen>
+    <dimen name="fontsize_8">8sp</dimen>
+    <dimen name="fontsize_10">10sp</dimen>
+    <dimen name="fontsize_12">12sp</dimen>
+    <dimen name="fontsize_14">14sp</dimen>
+    <dimen name="fontsize_16">16sp</dimen>
+    <dimen name="fontsize_18">18sp</dimen>
+    <dimen name="fontsize_20">20sp</dimen>
+    <dimen name="fontsize_22">22sp</dimen>
+    <dimen name="fontsize_24">24sp</dimen>
+    <dimen name="fontsize_26">26sp</dimen>
+    <dimen name="fontsize_28">28sp</dimen>
+    <dimen name="fontsize_30">30sp</dimen>
+    <dimen name="fontsize_32">32sp</dimen>
+    <dimen name="fontsize_34">34sp</dimen>
+
+    <!-- 间距距离 -->
+    <dimen name="spacing4h">2dp</dimen>
+    <dimen name="spacing2h">4dp</dimen>
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="spacing2x">16dp</dimen>
+    <dimen name="spacing3x">24dp</dimen>
+    <dimen name="spacing4x">32dp</dimen>
+    <dimen name="spacing5x">40dp</dimen>
+    <dimen name="spacing6x">48dp</dimen>
+    <dimen name="spacing7x">56dp</dimen>
+    <dimen name="spacing8x">64dp</dimen>
+    <dimen name="spacing9x">72dp</dimen>
+    <dimen name="spacing10x">80dp</dimen>
+    <dimen name="spacing11x">88dp</dimen>
+    <dimen name="spacing12x">96dp</dimen>
+    <dimen name="text_size_m">16sp</dimen>
+    <dimen name="text_size_s">14sp</dimen>
+    <!-- proj -->
+    <dimen name="slidmenu_width">240dp</dimen>
+    <dimen name="apptitle_height">48dp</dimen>
+    <dimen name="photo_radius">8dp</dimen>
+    <dimen name="measurebar_maxwidth">420dp</dimen>
+    <dimen name="photoview_size">128dp</dimen>
+    <dimen name="photoview_size_s">136dp</dimen>
+    <dimen name="progress_size">24dp</dimen>
+    <dimen name="pull_height">64dp</dimen>
+    <!-- spot progress -->
+    <dimen name="spot_size">6dp</dimen>
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="progress_margin">24dp</dimen>
+    <dimen name="progress_width">250dp</dimen>
+</resources>

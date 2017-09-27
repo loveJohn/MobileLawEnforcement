@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:background="@mipmap/bg_home_user"
+    android:paddingLeft="@dimen/spacing"
+    android:paddingRight="@dimen/spacing" >
+
+    <ImageView
+        android:id="@+id/view_user_phtoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_user_photo"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/view_user_phtoto"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/view_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="用户名"
+                android:textColor="#414445"
+                android:textSize="@dimen/fontsize_medium" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/view_user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="用户角色"
+                android:textColor="#0ca1f7"
+                android:textSize="@dimen/fontsize_small" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view_user_sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:gravity="bottom|right"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fontsize_micro" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/view_user_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_kh" />
+
+</RelativeLayout>

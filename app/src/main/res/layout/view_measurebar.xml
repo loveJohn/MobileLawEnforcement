@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_measurebar"
+    android:padding="@dimen/spacing" >
+
+    <ImageButton
+        android:id="@+id/view_measurebar_shut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_shut" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/view_measurebar_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_toLeftOf="@+id/view_measurebar_shut"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_clear" />
+
+    <RadioGroup
+        android:id="@+id/view_measurebar_la"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_measurebar_clear"
+        android:layout_alignTop="@+id/view_measurebar_clear"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_toLeftOf="@+id/view_measurebar_clear"
+        android:background="@drawable/bg_blz_g"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/view_measurebar_l"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_blz_l"
+            android:button="@color/transparent"
+            android:checked="true"
+            android:paddingBottom="@dimen/spacing2h"
+            android:paddingLeft="@dimen/spacing"
+            android:paddingRight="@dimen/spacing"
+            android:paddingTop="@dimen/spacing2h"
+            android:text="距离"
+            android:textColor="@drawable/fontcolor_blz"
+            android:textSize="@dimen/fontsize_normal" />
+
+        <RadioButton
+            android:id="@+id/view_measurebar_a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_blz_r"
+            android:button="@color/transparent"
+            android:paddingBottom="@dimen/spacing2h"
+            android:paddingLeft="@dimen/spacing"
+            android:paddingRight="@dimen/spacing"
+            android:paddingTop="@dimen/spacing2h"
+            android:text="面积"
+            android:textColor="@drawable/fontcolor_blz"
+            android:textSize="@dimen/fontsize_normal" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/view_measurebar_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_toLeftOf="@+id/view_measurebar_clear"
+        android:checked="false"
+        android:switchMinWidth="@dimen/spacing9x"
+        android:switchPadding="@dimen/spacing2h"
+        android:switchTextAppearance="@style/textappearance_switch"
+        android:textOff="@string/cn_length"
+        android:textOn="@string/cn_area"
+        android:thumb="@drawable/thumb_measure"
+        android:thumbTextPadding="@dimen/spacing2h"
+        android:track="@drawable/track_measure"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_measurebar_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_measurebar_clear"
+        android:layout_alignTop="@+id/view_measurebar_clear"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_toLeftOf="@+id/view_measurebar_la"
+        android:background="@drawable/bg_measuretext"
+        android:gravity="center"
+        android:hint="@string/cn_tomeasure"
+        android:textColor="@color/measurebar_num"
+        android:textSize="@dimen/fontsize_normal" >
+    </TextView>
+
+</RelativeLayout>

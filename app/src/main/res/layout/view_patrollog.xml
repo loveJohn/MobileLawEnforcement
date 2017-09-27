@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:text="巡查结果："
+            android:textColor="#464656"
+            android:textSize="@dimen/fontsize_normal" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/view_patrollog_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@drawable/shape_rec_corners_4_default"
+            android:gravity="left|top"
+            android:minLines="8"
+            android:padding="@dimen/spacing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/view_patrollog_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/spacing"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_camera" >
+            </ImageButton>
+        </LinearLayout>
+        <!-- 照片列表 -->
+
+        <com.chinadci.android.ui.views.NoScrollGridView
+            android:id="@+id/view_patrollog_photogrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/spacing" >
+        </com.chinadci.android.ui.views.NoScrollGridView>
+
+        <LinearLayout
+            android:id="@+id/view_patrollog_annexes_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

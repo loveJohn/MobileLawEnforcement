@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/timeline_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/layout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView_project_bh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="编号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView_project_tcmc_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="案件来源："
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_12" />
+
+        <TextView
+            android:id="@+id/textView_project_ajly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/textView_project_tcmc_div"
+            android:singleLine="true"
+            android:text="日常巡查"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_jcbh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:singleLine="true"
+        android:text="监测编号："
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize_12"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tt_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="详细地址："
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_12" />
+
+        <TextView
+            android:id="@+id/btn_dh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_btn_blue"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingLeft="@dimen/spacing2x"
+            android:paddingRight="@dimen/spacing2x"
+            android:paddingTop="@dimen/spacing"
+            android:text="带我去"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_12"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView_xxdz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_dh"
+            android:layout_toRightOf="@id/tt_div"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_12" />
+    </RelativeLayout>
+
+</LinearLayout>

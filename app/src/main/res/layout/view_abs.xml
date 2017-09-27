@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_abs_lpad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_listitem"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/view_abs_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_no"
+            android:gravity="center"
+            android:hint="No:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_normal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing2h"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/view_abs_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontsize_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/view_abs_lab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing2h"
+                android:hint="Lab1"
+                android:textColor="#898989"
+                android:textSize="@dimen/fontsize_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/view_abs_lab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lab2"
+                android:textColor="#898989"
+                android:textSize="@dimen/fontsize_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/view_abs_lab3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lab3"
+                android:textColor="#898989"
+                android:textSize="@dimen/fontsize_small"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_abs_dat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:hint="Dat1"
+        android:lineSpacingExtra="@dimen/spacing2h"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize_normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_abs_dat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:hint="Dat2"
+        android:lineSpacingExtra="@dimen/spacing2h"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize_normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/view_abs_dat3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:hint="Dat3"
+        android:lineSpacingExtra="@dimen/spacing2h"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize_normal"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment-关于应用 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing" >
+
+        <ImageView
+            android:id="@+id/fragment_about_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:src="@mipmap/ic_app" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/fragment_about_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_large" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fragment_about_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:textColor="#33b5e5"
+            android:textSize="@dimen/fontsize_normal"
+            android:textStyle="italic" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fragment_about_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:lineSpacingExtra="@dimen/spacing2h"
+            android:padding="@dimen/spacing"
+            android:shadowColor="@color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="@string/about_intr"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_medium" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing2x"
+            android:layout_marginTop="@dimen/spacing4x"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:text="@string/about_copyright_cn"
+                android:textColor="#33b5e5"
+                android:textSize="@dimen/fontsize_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:text="@string/about_copyright_en"
+                android:textColor="#33b5e5"
+                android:textSize="@dimen/fontsize_normal"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:text="@string/about_http"
+                android:textColor="#33b5e5"
+                android:textSize="@dimen/fontsize_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

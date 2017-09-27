@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_map_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.esri.android.map.MapView
+        android:id="@+id/view_map_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </com.esri.android.map.MapView>
+
+    <ImageButton
+        android:id="@+id/view_map_layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="#0fff"
+        android:src="@drawable/ic_maplayer" />
+
+    <ImageButton
+        android:id="@+id/view_map_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_map_layer"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="#0fff"
+        android:src="@drawable/ic_mapmeasure" />
+
+    <ImageButton
+        android:id="@+id/view_map_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_map_measure"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="#0fff"
+        android:src="@drawable/ic_maplocation" />
+
+    <LinearLayout
+        android:id="@+id/view_map_zoombar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/view_map_zoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0fff"
+            android:src="@drawable/ic_mapzoomin" />
+
+        <ImageButton
+            android:id="@+id/view_map_zoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0fff"
+            android:src="@drawable/ic_mapzoomout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_map_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/spacing"
+        android:layout_marginLeft="@dimen/spacing"
+        android:layout_marginRight="@dimen/spacing"
+        android:layout_toLeftOf="@+id/view_map_zoombar"
+        android:orientation="vertical"
+        android:tag="large" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_map_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_map_tablayout"
+        android:paddingLeft="@dimen/spacing" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/view_map_st_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_map_tablayout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/str_map_st_logo"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/fontsize_10" >
+    </TextView>
+
+</RelativeLayout>

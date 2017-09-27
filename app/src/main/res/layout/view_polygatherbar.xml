@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_polygongather_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_measurebar"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing" >
+
+    <Button
+        android:id="@+id/view_polygongatherbar_gat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableTop="@drawable/ic_gpslocation"
+        android:text="GPS采点"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_normal" />
+
+    <Button
+        android:id="@+id/view_polygongatherbar_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableTop="@drawable/ic_undo"
+        android:enabled="false"
+        android:text="撤销"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_normal" />
+
+    <Button
+        android:id="@+id/view_polygongatherbar_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableTop="@drawable/ic_redo"
+        android:enabled="false"
+        android:text="重做"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_normal" />
+
+    <Button
+        android:id="@+id/view_polygongatherbar_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0fff"
+        android:drawableTop="@drawable/ic_clear2"
+        android:enabled="false"
+        android:text="清空"
+        android:textColor="#000"
+        android:textSize="@dimen/fontsize_normal" />
+
+</LinearLayout>

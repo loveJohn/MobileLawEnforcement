@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+    <RadioGroup
+        android:id="@+id/Rbtn2SelectDkType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <RadioButton
+            android:id="@+id/Rbtn2SelectDkType1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_normal"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:height="40dp"
+            android:text="未办理"
+            android:textColor="@drawable/select_color_text"
+            android:textSize="@dimen/fontsize_16" />
+
+        <RadioButton
+            android:id="@+id/Rbtn2SelectDkType2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_normal"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:height="40dp"
+            android:text="待审核"
+            android:textColor="@drawable/select_color_text"
+            android:textSize="@dimen/fontsize_16" />
+
+        <RadioButton
+            android:id="@+id/Rbtn2SelectDkType3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_normal"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:height="40dp"
+            android:text="已审核"
+            android:textColor="@drawable/select_color_text"
+            android:textSize="@dimen/fontsize_16" />
+    </RadioGroup>
+    <com.chinadci.mel.mleo.ui.views.xlistview.XListView
+        android:id="@+id/land_xListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/black6c"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/black6c">
+
+    </com.chinadci.mel.mleo.ui.views.xlistview.XListView>
+</LinearLayout>

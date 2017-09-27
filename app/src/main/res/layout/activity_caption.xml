@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sda_content_bgcolor" >
+
+    <!-- 标题区域 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_caption_ctop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/apptitle_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_apptitle" >
+
+        <!-- 后退按钮 -->
+
+        <ImageButton
+            android:id="@+id/activity_caption_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_back" />
+
+        <!-- 标题文本 -->
+
+        <TextView
+            android:id="@+id/activity_caption_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing"
+            android:layout_toRightOf="@id/activity_caption_backbutton"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <!-- 右侧工具条显示区 -->
+
+        <RelativeLayout
+            android:id="@+id/activity_caption_ttoolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing"
+            android:background="@color/transparent" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 内容显示区 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_caption_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_caption_ctop"
+        android:background="@color/transparent" >
+    </RelativeLayout>
+
+</RelativeLayout>

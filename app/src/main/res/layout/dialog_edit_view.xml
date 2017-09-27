@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:padding="@dimen/spacing">
+    
+    <!-- add teng.guo 20170626 -->
+    <TextView 
+        android:id="@+id/text_view_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_edit_reason"
+        android:textSize="18sp"
+       android:visibility="gone"/>
+    
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize_14"
+        android:layout_height="wrap_content" >
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_task_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing" >
+
+ 
+
+     <com.chinadci.mel.android.views.pullvessel.ListViewRefreshVessel
+         android:id="@+id/fragment_mineraltrack_vessel"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="@dimen/spacing" >
+
+         <ListView
+             android:id="@+id/fragment_mineraltrack_listview_unfinish"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:divider="@color/transparent"
+             android:dividerHeight="@dimen/spacing"
+             android:listSelector="@color/transparent" >
+         </ListView>
+     </com.chinadci.mel.android.views.pullvessel.ListViewRefreshVessel>
+
+    <TextView
+        android:id="@+id/fragment_mineraltrack_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="@dimen/spacing"
+        android:drawableTop="@mipmap/ic_sad"
+        android:gravity="center"
+        android:text="@string/cn_nodata"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/fontsize_medium"
+        android:visibility="gone" />
+
+</LinearLayout>

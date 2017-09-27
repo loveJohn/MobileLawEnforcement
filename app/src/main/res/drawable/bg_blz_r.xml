@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="#00bebebe" />
+                </shape></item>
+            <item android:bottom="1px" android:left="0px" android:right="1px" android:top="1px"><shape android:shape="rectangle">
+                    <solid android:color="#0a79b0" />
+
+                    <corners android:bottomRightRadius="1dp" android:topRightRadius="1dp" />
+                </shape></item>
+        </layer-list></item>
+    <item android:state_checked="true"><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="#00bebebe" />
+                </shape></item>
+            <item android:bottom="1px" android:left="0px" android:right="1px" android:top="1px"><shape android:shape="rectangle">
+                    <solid android:color="#0a79b0" />
+
+                    <corners android:bottomRightRadius="1dp" android:topRightRadius="1dp" />
+                </shape></item>
+        </layer-list></item>
+    <item><layer-list>
+            <item><shape android:shape="rectangle">
+                    <solid android:color="#00bebebe" />
+                </shape></item>
+            <item android:bottom="1px" android:left="0px" android:right="1px" android:top="1px"><shape android:shape="rectangle">
+                    <solid android:color="#fefefe" />
+
+                    <corners android:bottomRightRadius="2dp" android:topRightRadius="2dp" />
+                </shape></item>
+        </layer-list></item>
+
+</selector>

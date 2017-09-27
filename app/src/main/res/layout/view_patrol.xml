@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/view_patrol_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingTop="@dimen/spacing"
+            android:text="@string/v_f16"
+            android:textColor="#2db1e2"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <com.chinadci.android.ui.views.NoScrollListView
+            android:id="@+id/view_patrol_attrilist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:choiceMode="none"
+            android:divider="#ebebeb"
+            android:dividerHeight="1px"
+            android:listSelector="@color/transparent" >
+        </com.chinadci.android.ui.views.NoScrollListView>
+
+        <LinearLayout
+            android:id="@+id/view_patrol_redline_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ebebeb" />
+
+
+            <TextView
+                android:id="@+id/view_patrol_redline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_redline_list_item"
+                android:drawableRight="@mipmap/ic_next"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/spacing"
+                android:paddingRight="@dimen/spacing"
+                android:paddingTop="10dp"
+                android:text="@string/v_f13"
+                android:textColor="#545454"
+                android:textSize="@dimen/fontsize_normal" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ebebeb" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_media" />
+    </LinearLayout>
+
+</ScrollView>

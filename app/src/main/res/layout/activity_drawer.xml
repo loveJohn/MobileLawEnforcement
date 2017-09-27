@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_slidemenu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="horizontal" >
+
+    <!-- 菜单区域 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_slidmenu_menu"
+        android:layout_width="@dimen/slidmenu_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_slidmenu" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 用户信息视图  android:background="@color/slidmenu_top" -->
+
+            <!--<com.chinadci.mleo.ui.views.DrawerMenuUserView
+                android:id="@+id/activity_slidmenu_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing10x"
+                android:background="@drawable/bg_menu_user" >
+            </com.chinadci.mleo.ui.views.DrawerMenuUserView>-->
+
+            <!-- 菜单列表 -->
+
+            <ListView
+                android:id="@+id/activity_slidmenu_menus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:divider="@mipmap/bg_slidmenu_divider"
+                android:dividerHeight="2dp"
+                android:listSelector="@color/transparent"
+                android:scrollbarThumbVertical="@color/transparent" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 内容显示区 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_slidmenu_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 标题区域 -->
+
+        <RelativeLayout
+            android:id="@+id/activity_slidmenu_ctop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/apptitle_height"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_apptitle" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- 菜单按钮 -->
+
+                <ImageButton
+                    android:id="@+id/activity_slidmenu_menubutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_slidmenu" />
+
+                <!-- 标题文本 -->
+
+                <TextSwitcher
+                    android:id="@+id/activity_slidmenu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_slidmenu_menubutton"
+                    android:inAnimation="@anim/slide_in_bottom"
+                    android:outAnimation="@anim/slide_out_top" >
+                </TextSwitcher>
+            </LinearLayout>
+
+            <!-- 右侧工具条显示区 -->
+
+            <FrameLayout
+                android:id="@+id/activity_slidmenu_ttoolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing"
+                android:background="@color/transparent" >
+            </FrameLayout>
+        </RelativeLayout>
+
+        <!-- 内容显示区 -->
+
+        <FrameLayout
+            android:id="@+id/activity_slidmenu_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/activity_slidmenu_ctop"
+            android:background="@color/sda_content_bgcolor" >
+        </FrameLayout>
+
+        <View
+            android:id="@+id/activity_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

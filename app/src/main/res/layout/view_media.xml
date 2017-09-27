@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 照片列表 -->
+
+    <LinearLayout
+        android:id="@+id/view_media_photolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:gravity="center"
+            android:text="@string/cn_photo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <com.chinadci.android.ui.views.NoScrollGridView
+            android:id="@+id/view_media_photogrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/spacing"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/spacing" >
+        </com.chinadci.android.ui.views.NoScrollGridView>
+    </LinearLayout>
+
+    <!-- 录音列表 -->
+
+    <LinearLayout
+        android:id="@+id/view_media_audiolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:gravity="center"
+            android:text="@string/cn_tape"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <com.chinadci.android.ui.views.NoScrollGridView
+            android:id="@+id/view_media_audiolist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/spacing" >
+        </com.chinadci.android.ui.views.NoScrollGridView>
+    </LinearLayout>
+
+    <!-- 视频列表 -->
+
+    <LinearLayout
+        android:id="@+id/view_media_vediolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:gravity="center"
+            android:text="@string/cn_vedio"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <com.chinadci.android.ui.views.NoScrollGridView
+            android:id="@+id/view_media_vediogrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth" >
+        </com.chinadci.android.ui.views.NoScrollGridView>
+    </LinearLayout>
+
+</LinearLayout>

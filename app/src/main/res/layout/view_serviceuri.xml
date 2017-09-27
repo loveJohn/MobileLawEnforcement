@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing" >
+
+    <TextView
+        android:id="@+id/view_serviceuri_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务地址"
+        android:textColor="#464656"
+        android:textSize="@dimen/fontsize_normal" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/view_serviceuri_uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:background="@drawable/shape_bg_corners_rectangle6"
+        android:gravity="left|top"
+        android:hint="服务地址"
+        android:minHeight="120dp"
+        android:padding="@dimen/spacing"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize_small" />
+
+    <Button
+        android:id="@+id/view_serviceuri_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing2x"
+        android:background="@drawable/bg_bluebutton"
+        android:text="确 定"
+        android:textColor="#fff"
+        android:textSize="@dimen/fontsize_medium" />
+
+</LinearLayout>

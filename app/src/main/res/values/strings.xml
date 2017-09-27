@@ -1,0 +1,457 @@
+<resources>
+    <string name="app_name">福建省国土资源移动执法监察系统</string>
+    <string name="app_name_abs">福建国土移动执法监察</string>
+    <string name="dci_appid">APP000000009D002</string>
+    <string name="cn_bvlayer">基础地图</string>
+    <string name="cn_rslayer">影像地图</string>
+    <string name="cn_gettinglocation">正在获取当前位置 。。。</string>
+    <string name="cn_prompt">提示</string>
+    <string name="cn_gpsoff">当前设备没开启GPS定位</string>
+    <string name="cn_opengps">开启定位</string>
+    <string name="cn_cancellocation">取消定位</string>
+    <string name="cn_length">长度</string>
+    <string name="cn_area">面积</string>
+    <string name="cn_photo">照片</string>
+    <string name="cn_tape">录音</string>
+    <string name="cn_vedio">视频</string>
+    <string name="cn_new">新建</string>
+    <string name="cn_info_edit">信息编辑</string>
+    <string name="cn_tomeasure">点击地图测量</string>
+    <string name="cn_resetservice">重设服务地址</string>
+    <string name="cn_typeaccount">用户名/手机号</string>
+    <string name="cn_type_curpassword">输入当前密码</string>
+    <string name="cn_type_newpassword">输入新密码</string>
+    <string name="cn_retype_newpassword">再次输入新密码</string>
+    <string name="cn_modify">修改</string>
+    <string name="cn_typepassword">密码</string>
+    <string name="cn_islogin">正在登录,请稍候 。。。</string>
+    <string name="cn_saveing">正在保存，请稍候 。。。</string>
+    <string name="cn_sendding">正在发送，请稍候 。。。</string>
+    <string name="cn_dealing">正在处理，请稍候 。。。</string>
+    <string name="cn_apply_returning">正在申请退回，请稍候 。。。</string>
+    <string name="cn_returning">正在退回，请稍候 。。。</string>
+    <string name="cn_login">登录</string>
+    <string name="cn_nonetwork">没有网络连接,请检查网络设置</string>
+    <string name="cn_defadmincode">350000</string>
+    <string name="cn_redlinegather">红线采集</string>
+    <string name="cn_redlinedisplay">查看红线</string>
+    <string name="cn_surveynote">调查笔录</string>
+    <string name="cn_casedetail">案件详情</string>
+    <string name="cn_nodata">没有数据</string>
+    <string name="cn_qd_bz">若当前位置与实际情况不符，请使用“手动签到”！</string>
+    <string name="cn_parties">当事人</string>
+    <string name="cn_clues_source">线索来源</string>
+    <string name="cn_admin">所在村居</string>
+    <string name="cn_sign">签到</string>
+    <string name="cn_site">地址签到</string>
+    <string name="en_text">TEST</string>
+    <string name="en_menuindex">menu_index</string>
+    <string name="en_large">large</string>
+    <string name="en_name">large</string>
+    <string name="en_password">large</string>
+    <string name="en_small">small</string>
+    <string name="sqm">m²</string>
+    <string name="mu">亩</string>
+    <string name="en_fcb_not_realize">activity not realize IDrawerFragmentActivityHandle</string>
+    <string name="txt_en_uuid">uuid</string>
+    <string name="txt_en_uuid2">uuid2</string>
+    <string name="txt_en_appid">appid</string>
+    <string name="txt_en_userid">userid</string>
+    <string name="txt_en_contact">contack</string>
+    <string name="txt_en_content">content</string>
+    <string name="txt_en_token">token</string>
+    <string name="txt_en_model">model</string>
+    <string name="txt_en_os">os</string>
+    <string name="txt_en_crack">crack</string>
+    <string name="txt_en_appversion">appversion</string>
+    <string name="txt_en_trail">trail</string>
+    <string name="txt_en_type">type</string>
+    <string name="txt_en_lat">lat</string>
+    <string name="txt_en_long">long</string>
+    <string name="format_last_signin">最近签到\n%1$s</string>
+    <string name="current_version">当前版本</string>
+    <string name="over_case">已办结</string>
+    <string name="not_over_case">未办结</string>
+    <string name="enter_caseid">输入案件编号</string>
+    <string name="tab_inspect">信息核查</string>
+    <string name="tab_patrol">核查处置</string>
+    <string name="tab_case">上报信息</string>
+    <string name="newlog">新建日志</string>
+    <string name="idsearch">编号查询</string>
+    <string name="snapresult">抽查结果</string>
+    <string name="cancel">取消</string>
+    <string name="report">上报</string>
+    <string name="save">保存</string>
+    <string name="send">发送 </string>
+    <string name="modify">修改</string>
+    <string name="request">获取</string>
+    <string name="conformit">合格</string>
+    <string name="non_conformit">不合格</string>
+    <string name="response">开启响应</string>
+    <string name="title_user_info">用户信息</string>
+
+    <string name="apply_reback">申请退回</string>
+    <string name="deal_with_apply">处理申请</string>
+    <string name="reback">退回</string>
+
+    <!-- text -->
+    <string name="fujian">福建省</string>
+    <string name="app_rename">国土资源移动执法监察系统</string>
+    <string name="waitting">请稍候...</string>
+    <string name="set_serviceuri">修改服务地址</string>
+    <string name="reset_serviceuri">恢复默认</string>
+    <string name="new_serviceuri">新的服务地址</string>
+    <string name="is_loading">正在加载,请稍候...</string>
+    <string name="userinfo">用户信息</string>
+    <string name="conmitanalyze">提交核查</string>
+    <string name="title_case_info">案件详情</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="pull_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载…</string>
+    <string name="no_more">没有更多可加载了...</string>
+
+    <!-- slidmenu item -->
+    <string name="mitem_case">巡查上报</string>
+    <string name="mitem_inspect2">快速处置</string>
+    <string name="mitem_inspect3">卫片核查</string>
+    <string name="mitem_track">已办工作</string>
+    <string name="mitem_track2">工作详情</string>
+    <string name="mitem_supervise">监督检查</string>
+    <string name="mitem_patolsign">巡查签到</string>
+    <string name="mitem_inspect">案件核查</string>
+    <string name="mitem_appear">案件上报</string>
+    <string name="mitem_survey">案件调查</string>
+    <string name="mitem_mapview">地图浏览</string>
+    <string name="mitem_faceback">意见反馈</string>
+    <string name="mitem_about">关于</string>
+    <string name="mitem_mapup">地图更新</string>
+    <string name="mitem_mineral_log">巡查上报</string>
+    <string name="mitem_mapanalyze">即时查</string>
+    <string name="mitem_statistics">统计分析</string>
+    <string name="mitem_mineral_hc">案件核查</string>
+    <string name="mitem_mineral_track">已办工作</string>
+    <string name="mitem_law">法律法规</string>
+
+    <!-- <i_f> -->
+    <string name="i_f1">线索来源：</string>
+    <string name="i_f2">用地主体类别：</string>
+    <string name="i_f3">主体名称：</string>
+    <string name="i_f4">所在村居：</string>
+    <string name="i_f5">详细地址：</string>
+    <string name="i_f6">项目类型：</string>
+    <string name="i_f7">初判地类：</string>
+    <string name="i_f8">用地类型：</string>
+    <string name="i_f9">用地现状：</string>
+    <string name="i_f10">违法用地面积：</string>
+    <string name="i_f11">备注：</string>
+    <string name="i_f12">电话：</string>
+    <string name="i_f13">地类：</string>
+    <string name="i_f14">核查结果：</string>
+    <string name="i_f15">成果说明：</string>
+    <string name="i_f16">处理情况：</string>
+    <string name="i_f17">制止通知书编号：</string>
+    <string name="i_f18">下达日期：</string>
+    <string name="i_f19">计划拆除时间：</string>
+    <string name="i_f20">组织人数：</string>
+    <string name="i_f21">拆除负责人：</string>
+    <string name="i_f22">立案决定书文号：</string>
+    <string name="i_f23">发文时间：</string>
+    <string name="i_f24">核查结果：</string>
+    <string name="i_f25">抽查结果：</string>
+    <string name="i_f26">报告政府时间：</string>
+    <string name="i_f27">转送时间：</string>
+
+    <!-- <v_f> -->
+    <string name="v_f1">线索来源</string>
+    <string name="v_f2">用地主体类别</string>
+    <string name="v_f3">主体名称</string>
+    <string name="v_f4">所在村居</string>
+    <string name="v_f5">详细地址</string>
+    <string name="v_f6">项目类型</string>
+    <string name="v_f7">初判地类</string>
+    <string name="v_f8">用地类型</string>
+    <string name="v_f9">用地现状</string>
+    <string name="v_f10">违法用地面积</string>
+    <string name="v_f11">备注</string>
+    <string name="v_f12">绘制红线</string>
+    <string name="v_f13">查看红线</string>
+    <string name="v_f14">第一次核查</string>
+    <string name="v_f15">案件状态</string>
+    <string name="v_f16">第一次处置</string>
+    <string name="v_f17">电话</string>
+    <string name="v_f18">地类</string>
+    <string name="v_f19">核查结果</string>
+    <string name="v_f20">备注</string>
+    <string name="v_f21">核查人</string>
+    <string name="v_f22">核查时间</string>
+    <string name="v_f23">案件编号</string>
+    <string name="v_f24">上报人</string>
+    <string name="v_f25">上报时间</string>
+    <string name="v_f26">处理情况</string>
+    <string name="v_f27">制止通知书编号</string>
+    <string name="v_f28">下达日期</string>
+    <string name="v_f29">计划拆除时间</string>
+    <string name="v_f30">组织人数</string>
+    <string name="v_f31">拆除负责人</string>
+    <string name="v_f32">立案决定书文号</string>
+    <string name="v_f33">发文时间</string>
+    <string name="v_f34">处理上报人员</string>
+    <string name="v_f35">处理上报时间</string>
+    <string name="v_f40">办理中</string>
+    <string name="v_f41">已办结</string>
+    <string name="v_f42">报告政府时间</string>
+    <string name="v_f43">一张图分析结果</string>
+    <string name="v_f44">占用耕地面积</string>
+
+    <!-- <f_f> -->
+    <string name="f_f1">违法主体名称：%1$s</string>
+    <string name="f_f2">所在村居：%1$s</string>
+    <string name="f_f3">违法用地面积：%1$s</string>
+    <string name="f_f4">案件状态：%1$s</string>
+    <string name="f_f5">违建类型：%1$s</string>
+    <string name="f_f6">签到时间：%1$s</string>
+    <string name="f_f7">说明：%1$s</string>
+    <string name="f_f8">原因：%1$s</string>
+    <string name="f_f9">签到地点：%1$s</string>
+
+    <!-- <s_f> -->
+    <string name="s_f1">签到类型：</string>
+    <string name="s_f2">签到时间：</string>
+    <string name="s_f3">坐标：</string>
+    <string name="s_f4">行政区编码：</string>
+    <string name="s_f5">签到地点：</string>
+    <string name="s_f6">详细地址：</string>
+    <string name="s_f7">说明：</string>
+    <string name="s_f8">原因：</string>
+
+    <!-- service uri -->
+    <string name="default_uri_app">http://112.111.45.108:8080/androidService/servlet</string>	<!--默认服务器地址,用于恢复默认地址。福建正式服 (云平台)-->
+    <!-- <string name="uri_app">http://124.42.241.3:11111/androidService_test/servlet</string> -->
+    <!-- <string name="uri_app">http://172.26.40.160:8080/androidService/servlet</string> --><!-- 本地测试服 -->
+    <!-- <string name="uri_app">http://218.5.1.84:8484/androidService_test/servlet</string> -->	<!--guoteng 福建测试服务器-->
+    <!-- <string name="uri_app">http://218.5.1.84/androidService/servlet</string> -->	<!--福建正式服 (停用)-->
+    <string name="uri_app">http://112.111.45.108:8080/androidService/servlet</string><!--福建正式服 (云平台)-->
+    <!-- add guoteng 内网测试服1--><!-- <string name="uri_app">http://192.168.200.161:11111/androidService_test/servlet</string> -->
+    <!-- add guoteng 内网测试服2 临时-->	<!-- <string name="uri_app">http://172.26.40.160:8080/androidService/servlet</string> -->
+
+    <!-- 	市场人员版 -->
+    <!--     <string name="uri_app">http://218.5.1.84/androidService/servlet</string> -->
+    <!--
+    <string name="uri_statistics_land">http://218.5.1.84/fjydzf/statistic/toMobileStatistic?username=chinadci</string>
+    <string name="uri_statistics_mineral">http://218.5.1.84/fjydzf/mobileStatistic/toMobileStatisticKc?username=chinadci</string>
+    -->
+    <string name="uri_statistics_land">http://112.111.45.108:8080/fjydzf/statistic/toMobileStatistic?username=chinadci</string>
+    <string name="uri_statistics_mineral">http://112.111.45.108:8080/fjydzf/mobileStatistic/toMobileStatisticKc?username=chinadci</string>
+
+    <!-- <string name="uri_law">http://218.5.1.84/fjydzf/sysmanage/flfg?username=chinadci</string> -->
+    <string name="uri_law">http://112.111.45.108:8080/fjydzf/sysmanage/flfg?username=chinadci</string>
+
+    <!-- <string name="uri_law">http://172.26.40.98:8080/fjydzf/sysmanage/flfg?username=chinadci</string> -->
+
+    <!-- <string name="uri_jctbUrl">http://124.42.241.3:6080/arcgis/rest/services/fjydzf/fjydzf_test/MapServer</string> -->
+    <string name="uri_jctbUrl">http://112.111.45.108:8080/arcgis/rest/services/fjydzf/fjydzf_test/MapServer</string>
+
+
+
+    <!-- 服务地址 -->
+    <string name="uri_userupdate_service">UserUpdate</string>
+    <string name="uri_login_service">Login</string>
+    <string name="uri_admin_service">Administrative</string>
+    <string name="uri_arguments_service">Parameters</string>
+    <string name="uri_gps_service">UserGPS</string>
+    <string name="uri_annex_service">Annex</string>
+    <string name="uri_case_service">Case</string>
+    <string name="uri_inspection_service">CaseCheck</string>
+    <string name="uri_mineral_log">Mine</string>
+    <string name="uri_casetrack_service">CaseParticulars</string>
+    <string name="uri_mineraltrack_service">AlreadyDone</string>
+    <string name="uri_patrol_signin">PatrolSignIn</string>
+    <string name="uri_patrol_signin_new">PatrolSignInNew</string>
+    <string name="uri_case_overseer">Overseer</string>
+    <string name="uri_mineralhc_log">MineHC</string>
+    <string name="uri_mapanalyze">GeographicAnalysis</string>
+    <string name="uri_version">Version</string>
+    <string name="uri_mapbag">Version?filetype=2</string>
+    <string name="uri_response">QuickRespond</string>
+    <string name="uri_update_password">User/Password</string>
+
+    <!-- TODO -->
+    <string name="uri_getSumNum">SumNum</string>
+    <string name="uri_getPreSubNum">PreSubNum</string>
+    <string name="uri_getPreSubNum1">WpPreSubNum</string>
+    <string name="uri_getSubNum">SubNum</string>
+    <string name="uri_getSubNum1">WpSubNum</string>
+    <string name="uri_casecheck">CaseWpzfCheck</string>
+    <string name="uri_chexiao">CheXiao</string>
+    <string name="uri_casealoneinfo">CaseAloneInfo</string>
+    <string name="uri_getWpzfAjNum">WpAjlx</string>
+    <string name="uri_getWpTbCz">WpTbCz</string>
+    <string name="uri_putWpCaseSb">WpCaseSb</string>
+    <string name="uri_getAjlj">WpljServlet</string>
+    <string name="uri_wpCaseAjNew">WpCaseAjNew</string>	<!-- 新增案件 -->
+    <string name="uri_case_apply">WpAjSq</string>	<!-- 申请退回 -->
+    <string name="uri_get_patch">WpXfpc</string>	<!-- 批次 -->
+    <!-- TODO -->
+
+    <!-- 新的附件上传服务,上传后返回附件编号 20141015 -->
+    <string name="uri_annexupload_service">AnnexUpload</string>
+    <!-- 新的案件上传服务,上传参数中包含附件编号 20141015 -->
+    <string name="uri_casesb_service">CaseSb</string>
+    <!-- 新的案件核查服务(快速处置),上传参数中包含附件编号 20141015 -->
+    <string name="uri_casecheck_service">CaseCheck</string>
+    <!-- GPS坐标地址匹配服务 -->
+    <string name="uri_address_service">Address</string>
+
+    <!-- 登录服务相对地址 -->
+    <string name="service_login"></string>
+    <!-- dir & file -->
+    <!-- 根目录 -->
+    <string name="dir_root">FJGouTuYiDongZhiFa</string>
+    <!-- 照片目录 -->
+    <string name="dir_photos">FJGouTuYiDongZhiFa/photo</string>
+    <!-- 视频目录 -->
+    <string name="dir_videos">FJGouTuYiDongZhiFa/video</string>
+    <!-- 录音目录 -->
+    <string name="dir_audios">FJGouTuYiDongZhiFa/audio</string>
+    <!-- 附件目录 -->
+    <string name="dir_annex">FJGouTuYiDongZhiFa/annex</string>
+    <!-- 数据库目录 -->
+    <string name="dir_dbs">FJGouTuYiDongZhiFa/dbs</string>
+    <!-- 本地地图目录 -->
+    <string name="dir_maps">FJGouTuYiDongZhiFa/maps</string>
+    <!-- 临时目录 -->
+    <string name="dir_temp">FJGouTuYiDongZhiFa/temp</string>
+    <string name="dir_apk">FJGouTuYiDongZhiFa/apk</string>
+    <string name="dir_manifest">FJGouTuYiDongZhiFa/manifest</string>
+    <!-- 数据库文件 -->
+    <string name="file_dbmlb">dbmlb.db</string>
+    <!-- 基础矢量地图文件 -->
+    <string name="file_rslayer">rsmap.tpk</string>
+    <!-- 影像地图文件 -->
+    <string name="file_bvlayer">bvmap.tpk</string>
+
+    <!-- db & table -->
+    <!-- 数据库 -->
+    <string name="db_dbmlb">dbmlb</string>
+    <!-- 用户表 -->
+    <string name="tb_users">USERS</string>
+
+    <!-- 待完成任务表 -->
+    <string name="tb_tasks">TASKS</string>
+    <!-- 案件调查缓存表 -->
+    <string name="tb_tasksurvey">TASK_SURVEY</string>
+    <!-- 任务对应案件信息表 -->
+    <string name="tb_taskcase">TASK_CASE</string>
+
+    <!-- 历史任务表 -->
+    <string name="tb_his_tasks">HIS_TASKS</string>
+    <!-- 历史任务案件调查缓存表 -->
+    <string name="tb_his_tasksurvey">HIS_TASK_SURVEY</string>
+    <!-- 历史任务对应案件信息表 -->
+    <string name="tb_his_taskcase">HIS_TASK_CASE</string>
+    <string name="tb_his_taskrolog">HIS_TASK_ROLOG</string>
+
+    <!-- 案件上报表缓存表 -->
+    <string name="tb_case">LOCAL_CASE</string>
+    <!-- 已上报案件表 -->
+    <string name="tb_his_case">HIS_CASE</string>
+
+    <!-- 行政区表 -->
+    <string name="tb_admin">ADMIN_REGION</string>
+    <!-- 案由表 -->
+    <string name="tb_caseaction">CASE_CAUSE</string>
+    <!-- 案件来源表 -->
+    <string name="tb_casesource">CASE_SOURCE</string>
+    <!-- 案件调查结果表 -->
+    <string name="tb_surveyresult">SURVEY_RESULT</string>
+    <!-- 案件紧急程度表 -->
+    <string name="tb_urgency">URGENCY</string>
+    <!-- 数据同表 -->
+    <string name="tb_sync">SYNC</string>
+
+    <!-- 通知公告表 -->
+    <string name="tb_notice">NOTIFICATION</string>
+
+    <!-- 附件表 -->
+    <string name="tb_annex">ANNEX</string>
+
+    <!-- 签到表 -->
+    <string name="tb_sign">SIGN</string>
+
+    <!-- shared_preferences -->
+    <string name="shared_preferences">ls.sharedpreferences</string>
+    <!-- 当前用户 -->
+    <string name="sp_actuser">actuser</string>
+    <!-- 当前服务器记录的密码更新时间 -->
+    <string name="sp_updatetimeonsever">updatetimeonsever</string>
+    <!-- 用户上次登陆时间-->
+    <string name="sp_last_login_time">lastLoginTime</string>
+    <!-- 当前用户名字 -->
+    <string name="sp_actusername">actusername</string>
+    <!-- 应用服务 -->
+    <string name="sp_appuri">appservice</string>
+    <!-- 基础地图 -->
+    <string name="sp_bvmapuri">mapservice</string>
+    <!-- 影像地图 -->
+    <string name="sp_rsmapuri">rsiservice</string>
+    <!-- 地图数据来源,ture为在线,false为离线 -->
+    <string name="sp_apkdownload_id"></string>
+    <string name="sp_onlinemap">onlinemap</string>
+    <string name="sp_last_signin_time">lastsignintime</string>
+    <string name="sp_mainmenu_teached">mainmenuteached</string>
+    <string name="sp_shutmenu_teached">shutmenuteached</string>
+    <string name="sp_hideright_teached">hiderightteached</string>
+
+    <!-- Actions 参数 -->
+    <string name="action_new_task_count">newtaskcount</string>
+
+    <!-- about -->
+    <string name="about_intr">福建省国土资源移动执法监察系统利用现代信息技术实现对土地利用和矿产勘查开发情况进行全面监管，及时发现、及时处理、有效遏制违法行为，充分保护耕地，为实现“天上看、地上查、网上管”的国土资源综合管理，全面提高国土资源管理与服务水平，为节约、集约利用土地和矿产资源、加强土地、矿产资源管理提供强有力的技术支撑和信息保障。</string>
+    <string name="about_http">开发单位:广州城市信息研究所有限公司</string>
+    <string name="about_copyright_cn">【福建省国土资源厅】 版权所有</string>
+    <string name="about_copyright_en">Copyright © 2014\nAll Rights Reserved.</string>
+
+    <!-- 下拉刷新，上拉加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 时间轴 -->
+    <string name="str_vertical">竖线</string>
+    <string name="str_content_icon">内容标志</string>
+    <string name="str_time">下发时间</string>
+
+    <!-- 卫片核查查找条件 -->
+    <integer name="str_default_year_list_length">10</integer>		<!-- 默认年份设置长度     往前10年 -->
+    <string name="str_patch">批次</string>
+    <string name="str_year">年份</string>
+    <string name="str_district">区域</string>
+    <string name="str_filter">筛选</string>
+
+    <string name="str_edit_reason">是否转入立案查处系统？并填写原因</string>
+    <string name="str_edit_reback_reason">若需要申请退回，请填写原因。</string>
+    <string name="str_edit_reback_tips">是否通过申请，将案件退回未办理？</string>
+
+    <string name="str_patrol_history_tips_return">案件申请退回记录</string>
+
+    <string name="str_return_apply">申请退回</string>
+    <string name="str_return_applyer">申请人: </string>
+    <string name="str_return_apply_time">申请时间: </string>
+    <string name="str_return_apply_reason">申请原因: </string>
+
+    <string name="str_return_deal">退回处理</string>
+    <string name="str_return_dealer">处理人: </string>
+    <string name="str_return_deal_time">处理时间: </string>
+    <string name="str_return_deal_reason">处理原因: </string>
+
+    <string name="str_gps_support_close_tips">GPS未打开</string>
+
+    <string name="str_map_st_logo">天地图·福建(闽S[2016]21号)</string>
+
+</resources>

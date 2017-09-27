@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" >
+    	
+        	<TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="1" >
+
+                 <TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_margin="10dp"
+                        android:text="@string/str_patch"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+                    
+                    <TextView
+                        android:id="@+id/fg_land_inspection_list_find_patch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_next"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" />
+
+                    <TextView
+                        android:id="@+id/fg_land_inspection_list_find_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_next"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" 
+                        android:visibility="gone">
+                    </TextView>
+                    
+                    <TextView
+                        android:id="@+id/fg_land_inspection_list_find_year_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_next"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal"
+                        android:visibility="gone" >
+                    </TextView>
+                </TableRow>
+                
+               	<TableRow android:paddingTop="@dimen/spacing2h" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/str_district"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/fg_land_inspection_list_find_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_autotextview"
+                        android:drawableRight="@mipmap/ic_next"
+                        android:padding="@dimen/spacing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fontsize_normal" >
+                    </TextView>
+                </TableRow>
+       
+            </TableLayout>
+            
+        	<Button 
+        	    android:id="@+id/fg_land_inspection_list_find_do_filter"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="@string/str_filter"/>
+        
+        </LinearLayout>
+
+        
+</LinearLayout>

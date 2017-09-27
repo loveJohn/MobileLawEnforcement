@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CountDownView">
+        <attr name="background_color" format="color"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="plotting_brush_attr">
+        <attr name="plotColor" format="reference|color" />
+        <attr name="plotRadius" format="integer" />
+    </declare-styleable>
+    <!-- SpotsDialog -->
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AlphaMaskLayout">
+        <!--透明度0~255-->
+        <attr name="aml_alpha_from" format="integer"/>
+        <!--透明度0~255-->
+        <attr name="aml_alpha_to" format="integer"/>
+        <!--透明度动画时间长度-->
+        <attr name="aml_duration" format="integer"/>
+    </declare-styleable>
+
+</resources>

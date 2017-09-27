@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login" >
+
+    <LinearLayout
+        android:id="@+id/activity_login_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing2x" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#454545"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <!-- <AutoCompleteTextView
+            android:id="@+id/activity_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:background="@drawable/bg_user_box"
+            android:completionThreshold="1"
+            android:ems="20"
+            android:hint="@string/cn_typeaccount"
+            android:paddingLeft="@dimen/spacing6x"
+            android:paddingRight="@dimen/spacing"
+            android:popupBackground="@drawable/bg_autotextview"
+            android:singleLine="true"
+            android:textSize="@dimen/fontsize_normal" >
+        </AutoCompleteTextView> -->
+        
+        <com.chinadci.mel.android.ui.views.DropDownEditText
+            android:id="@+id/activity_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:background="@drawable/bg_user_box"
+            android:gravity="center_vertical"
+            android:completionThreshold="1"
+            android:ems="20"
+            android:hint="@string/cn_typeaccount"
+            android:paddingLeft="@dimen/spacing6x"
+            android:paddingRight="@dimen/spacing"
+            android:popupBackground="@drawable/bg_autotextview"
+            android:singleLine="true"
+            android:textSize="@dimen/fontsize_normal" >
+        </com.chinadci.mel.android.ui.views.DropDownEditText>
+
+        <EditText
+            android:id="@+id/activity_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@drawable/bg_password_box"
+            android:gravity="center_vertical"
+            android:ems="20"
+            android:hint="@string/cn_typepassword"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/spacing6x"
+            android:paddingRight="@dimen/spacing"
+            android:singleLine="true"
+            android:textSize="@dimen/fontsize_normal" >
+        </EditText>
+
+        <Button
+            android:id="@+id/activity_login_butlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing2x"
+            android:background="@drawable/bg_greenbutton"
+            android:shadowColor="#349641"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/cn_login"
+            android:textSize="@dimen/fontsize_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_login_inputlayout"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing2x" >
+
+        <Button
+            android:id="@+id/activity_login_butsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@color/transparent"
+            android:drawableLeft="@mipmap/ic_sign_1"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingTop="@dimen/spacing"
+            android:text="修改应用服务地址"
+            android:textColor="#454545"
+            android:textSize="@dimen/fontsize_normal" />
+
+        <Button
+            android:id="@+id/activity_login_mapbag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                      android:background="@color/transparent"
+            android:drawableLeft="@mipmap/ic_sign_1"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingTop="@dimen/spacing"
+            android:text="下载离线地图安装包"
+            android:textColor="#454545"
+            android:textSize="@dimen/fontsize_normal" />
+    </LinearLayout>
+
+</RelativeLayout>

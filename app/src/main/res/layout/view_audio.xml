@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_audio_item"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/view_audio_index"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_audio_index"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_medium" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/spacing"
+        android:src="@mipmap/ic_audio" />
+
+    <TextView
+        android:id="@+id/view_audio_length"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/spacing"
+        android:gravity="center_vertical"
+        android:text="00:00:12"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/spacing" >
+
+        <ImageButton
+            android:id="@+id/view_audio_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_close"
+            android:padding="@dimen/spacing"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+</LinearLayout>

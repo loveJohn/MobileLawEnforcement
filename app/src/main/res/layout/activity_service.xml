@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/activity_service_titlayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_apptitle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/activity_service_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:background="#0fff"
+            android:src="@drawable/ic_back" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/activity_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing"
+            android:text="@string/set_serviceuri"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/fontsize_medium" >
+        </TextView>
+        
+        <View 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+        
+        <Button
+            android:id="@+id/activity_service_reset_uri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:text="@string/reset_serviceuri"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/fontsize_small" >
+        </Button>
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_service_urilayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_service_titlayout"
+        android:background="#f1f6fa"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing2h"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:text="@string/new_serviceuri"
+            android:textColor="#000"
+            android:textSize="@dimen/fontsize_normal" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/activity_service_appuri"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/spacing2h"
+            android:background="@drawable/shape_rec_corners_4_default"
+            android:gravity="left|top"
+            android:inputType="textUri"
+            android:padding="@dimen/spacing"
+            android:textSize="@dimen/fontsize_normal" >
+        </EditText>
+
+        <Button
+            android:id="@+id/activity_service_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing"
+            android:background="@drawable/bg_bluebutton"
+            android:text="@string/modify"
+            android:textColor="#fff"
+            android:textSize="@dimen/fontsize_medium" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

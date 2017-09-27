@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/fragment_tool_o2button_obutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_stool"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing"
+        android:paddingRight="@dimen/spacing"
+        android:textColor="@drawable/fontcolor_tool"
+        android:textSize="@dimen/fontsize_normal" />
+
+    <Button
+        android:id="@+id/fragment_tool_o2button_leftbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing"
+        android:background="@drawable/bg_btool_left"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing"
+        android:paddingRight="@dimen/spacing"
+        android:textColor="@drawable/fontcolor_tool"
+        android:textSize="@dimen/fontsize_normal" />
+
+    <Button
+        android:id="@+id/fragment_tool_o2button_rightbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btool_right"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing"
+        android:paddingRight="@dimen/spacing"
+        android:textColor="@drawable/fontcolor_tool"
+        android:textSize="@dimen/fontsize_normal" />
+
+</LinearLayout>
